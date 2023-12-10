@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhijeet - portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin: 0%;
+            background-color: rgb(38, 38, 58);
+            font-family: 'Lato', sans-serif;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+             
+        }
+       nav{
+                background-color: rgb(44, 44, 78);
+                display: flex;
+                
+                height: 80 px;
+               
+                
+            }
+            nav .left {
+                float: left;
+                padding-top: 10px;
+                margin-left: 20px;
+              }
+              nav .right {
+                float: right;
+              }
+            nav .right ul{
+                display: flex;
+                justify-content: space-centre;
+            }
+            nav .right ul li{
+                list-style: none;
+                margin: 0 23px;
+            }
+            nav .right ul li a{
+                text-decoration: none;
+                color: white;
+            }
+            nav .right ul li a:hover{
+               color:aqua ;
+               font-size: 1.04rem;
+            }
+            .left{
+                font-size: 1.5rem;
+            }
+            .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0 ;
+         }
+         .firstsection>div{
+            width: 30%;
+         }
+         .leftsection{
+            margin: 50px 0;
+            
+              font-size: 2.5rem;  
+         }
+         .leftsection .red{
+            color: rgb(184, 126, 210);
+         }
+         .rightsection>img{
+             width: 123%;
+         }
+        
+         .purple{
+            color: rgb(169, 126, 212);
+         }
+         .contact-section {
+     
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .contact-box {
+ 
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      max-width: 900px;
+      margin: auto;
+      
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .info-item {
+      width: 45%;
+      margin: 10px 0;
+    }
+
+    .info-item h4 {
+      color: #007bff;
+    }
+
+    .info-item p {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .info-item a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .info-item a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .info-item {
+        width: 100%;
+      }
+    }
+    
+    .contact-box2 {
+ 
+ border-radius: 8px;
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+ overflow: hidden;
+ max-width: 90%;
+ margin: auto;
+ text-align: center;
+ justify-content: center;
+ 
+}
+ 
+ 
+
+.work-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 100%;
+     max-height:100%;
+      margin-top: 30px;
+      
+    }
+
+
+
+    .work-item {
+      background-color: #857c9b;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      transition: transform 0.3s ease-in-out;
+      max-width: 500px;
+      max-height:700px;
+      margin: 10px;
+    }
+
+    .work-item:hover {
+      transform: scale(1.05);
+    }
+
+   
+
+    
+    
+
+    .work-title {
+        padding: 20px  20px 0 20px;
+      max-height: 80px;
+      overflow: hidden;
+      position: relative;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .work-text {
+        padding: 20px;
+      max-height: 300px;
+      overflow: hidden;
+      position: relative;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+     
+
+
+    .about-section {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.key-points {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.key-point {
+    background-color: #3d4256;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 350px;
+}
+
+@media screen and (max-width: 768px) {
+    .key-point {
+        width: 100%;
+    }
+}
+.intro-text{
+    color: #ddd;
+}
+.red{
+    color: #182041;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+   <nav>
+            <div class="left">ASWER</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutme">About me</a></li>
+                    <li><a href="#projectsspace">projects</a></li>
+                    <li><a href="#contact-me">contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+      
+
+
+
+
+
+    </header>
+    
+<main>
+     <section class="firstsection" id="home">
+        <div class="leftsection">
+            Hi, My name is <span class="purple">Abhijeet</span>
+            <div>I am a passionate software developer and </div>
+            <span class="red" id="element"></span>
+        </div>
+        <div class="rightsection">
+           <img src="bg.png" alt="">
+        </div>
+     </section>
+
+
+
+
+     <section class="about-section" id="aboutme">
+        <img class="profile-img" src="abhi.jpg" alt="Profile Image">
+        <p class="intro-text">
+            Hi, I'm  Abhijeet, a passionate individual with a strong background in  <span class="purple">software field</span>. I love to play cricket.
+        </p>
+    
+        <div class="key-points">
+            <div class="key-point">
+                <h3>Achievements</h3>
+                <p>
+                    Qualified JEE Advanced, showcasing academic excellence, and achieved a CodeChef rating of 1588, reflecting strong competitive programming skills.I have achieve a Supervised machine leaning degree from <a href="https://coursera.org/share/677b477121b4ba9bc248b08f295613e9"><span class="purple">Coursera</span></a> Continuously working hard to maximize achievements despite limited space in the accomplishments column</p>
+            </div>
+    
+            <div class="key-point">
+                <h3>Education</h3>
+                <p>Pursuing B.Tech at IIT Hyderabad, combining theoretical knowledge with practical skills. Secured 93% in 10th CBSE and 85% in 12th Bihar Board, showcasing consistent academic excellence. Qualified NDA, highlighting leadership and commitment to national service. Actively working towards further accomplishments in a limited space.</p>
+            </div>
+    
+            <div class="key-point">
+                <h3>Skills</h3>
+                <p>Proficient in programming languages such as C/C++, Python, HTML, CSS, Fortran, Dart, Julia, and JavaScript (Node.js). Experienced in working with frameworks like NumPy, Matplotlib, Pandas, Streamlit, Django, MongoDB, and React. Well-versed in various Integrated Development Environments, including Visual Studio Code, PyCharm, Android Studio, and Jupyter Notebook. Fluency in Database Management Systems (DBMS) and decent knowledge of Operating Systems (OS).</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+     <section class="my-work-section" id="projectsspace">
+        <div class="contact-box2">
+        <h2>My Work</h2>
+    
+        <div class="work-grid">
+          <!-- Work Item 1 -->
+          <div class="work-item">
+             
+            <div class="work-title">Whatsapp chat Analyser <br><span class="red">AI/ML</span></div>
+              <div class="work-text">
+                The WhatsApp chat analyzer is a sophisticated tool designed for importing and analyzing chat data with diverse capabilities. <br> an intuitive user interface, it allows users to import data from various sources, visualize it interactively, and gain insights into message distribution and essential statistics. <br>The tool also includes advanced search functionality and customizable filters, requiring a skill set encompassing statistics, Streamlit, NumPy, Pandas, Seaborn, and Matplotlib for its development.
+                
+                 
+              </div>
+          </div>
+
+          <div class="work-item">
+             
+            <div class="work-title">Weather Application<br><span class="red">Mobile and web App</span></div>
+            <div class="work-text"> 
+
+               <li>It is API integrated application which fetch data from open cloud server and display it.</li>
+               <li>It has very clean UI.</li>
+               <li>It is easy to used.</li>
+               <li> It is  compatible for all users(Android ,IOS, windows, MacOS).</li>  
+               <li>It is made with flutter framework.</li>
+                
+                 
+              
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">Online Shop Application<br><span class="red">Mobile and web App</span></div>
+            
+            <div class="work-text"> 
+            <li>It has all features like( View details, Add to cart ).I do not integrate with payment gateway(so there is  no any option to buy it).</li>
+            <li>It has all features like( View details, Add to cart ).I do not integrate with payment gateway(so there is  no any option to buy it).</li>
+            <li>So, it is compatible with all devices.</li>
+            <li>It can also easily integrated with API if I have server for starting online shop (All the product are hardcoded).</li>
+             
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title">SMS-spam checker Application <br><span class="red">NLP</span></div>
+            
+            <div class="work-text"> <li>Skill set required:-  NLP, Vectorizer, Machine learning algorithm, Streamlit, EDA.</li>
+            <li>It is easy to use.</li>
+            <li>You give input as a text it tells you it is spam or not. </li>
+            <li>It requires lots of Data analysis thinking to make data clean and focus on some words which is used by spammers</li>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title"> Duplicate pair question checker <br> <span class="red">NLP</span></div>
+            
+            <div class="work-text"> 
+                <li>Skill set required:-  NLP, Vectorizer, Machine learning algorithm, EDA, Advance feature Engineering, Statistics.</li>
+                <li>It requires pair of question to show that they are same or not.</li>
+                <li>It is the famous dataset provided by the Quora.</li>
+                <li>We use pickle to make a model for furthur classification and can be directly used by others</li>
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-title"> Amazon clone <br><span class="red">Backend + flutter</span></div>
+            
+            <div class="work-text"> 
+                <li>It has own backend code with mongoose server</li>
+                <li>It has been self authentication programme</li>
+                <li>it is as similar as amazon with nearly same specification</li>
+                <li>it has very clean ui</li>
+                <li>It's backend is written using Node.js and express.js to create API</li>
+                <li>THe fronted part is developed using Dart language in flutter</li>
+
+              
+            </div>
+        </div>
+        <div class="work-item">
+             
+            <div class="work-title">portfolio <br><span class="red">Fronted</span></div>
+            <div class="work-text"> 
+                <li>It is my portfolio website</li>
+                <li>IT has very clean ui with some cool animation</li>
+                <li>IT is made up of HTML,CSS,Js</li>
+                <li>IT is deploy by using github</li>
+            </div>
+        </div>
+          <!-- Work Item 2 -->
+     
+        
+        <div class="work-item">
+            <div class="work-title">MOnte carlo simulation<br> <span class="red">Data fitting</span></div>
+            
+            <div class="work-text">Monte Carlo Simulation: Utilizing the Monte Carlo Simulation technique, the project generates a vast number of potential
+                distributions with varying parameters to mimic the underlying data distribution.<br>
+                Interactive Visualization: The project offers interactive visualization tools to compare the original cluster data with the
+                simulated distributions, allowing users to gain a deeper understanding of the goodness-of-ft.
+            </div>
+        </div>
+          <!-- Add more work items as needed -->
+        </div>
+        </div>
+      </section>
+
+
+
+    
+    
+
+<section class="contact-section" id="contact-me">
+    <div class="contact-box">
+      <h2>Contact Me</h2>
+
+      <div class="contact-info">
+        <div class="info-item">
+           
+          <p>Email:  abhijeetkumar081037@gmail.com  </p>
+        </div>
+
+        <div class="info-item">
+          
+          <p>Name: Abhijeet kumar</p>
+        </div>
+
+        <div class="info-item">
+          
+          <p> <span>Phone: </span> 8298736703</p>
+        </div>
+
+        <div class="info-item">
+          
+          <p><a href="https://www.linkedin.com/in/abhijeet-kumar-1a58ba258/" target="_blank"><h4>LinkedIn</h4></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+ <footer>
+    <p>&copy; 2023       ASWER's portfolio.   All rights reserved.</p>
+  </footer>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['web developer', 'AI/ML Student','App developer'],
+      typeSpeed: 100,
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function toggleDescription(link) {
+      const description = link.parentNode.parentNode;
+      description.classList.toggle('expanded');
+      description.classList.toggle('collapsed');
+    }
+  </script>
+
+</body>
+</html>
