@@ -4,6 +4,8 @@ dist-ssr
 *.local
 .vite
 .DS_Store
+.claude
+Abhijeet_kumar.pdf
 
 # environment / secrets
 .env
