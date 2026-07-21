@@ -1,0 +1,8 @@
+.tag {
+  font-size: 0.78rem;
+  padding: 5px 12px;
+  border-radius: var(--pill);
+  background: var(--glass-strong);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+}

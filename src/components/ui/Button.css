@@ -1,0 +1,36 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 600;
+  font-size: 0.96rem;
+  padding: 13px 24px;
+  border-radius: var(--pill);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  will-change: transform;
+}
+
+.btn-primary {
+  background: linear-gradient(110deg, var(--violet), var(--blue));
+  color: var(--on-accent);
+  box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.3);
+}
+/* magnetic buttons follow the cursor snappily, then ease back on leave */
+.btn-magnetic {
+  transition: transform 0.15s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.42);
+}
+
+.btn-ghost {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  color: var(--text);
+}
+.btn-ghost:hover {
+  background: var(--glass-strong);
+  transform: translateY(-3px);
+}

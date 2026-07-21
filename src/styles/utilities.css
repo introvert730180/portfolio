@@ -1,0 +1,35 @@
+/* Small shared helpers used across sections. */
+
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+section {
+  position: relative;
+  padding: var(--section-pad) 0;
+  /* let the browser skip rendering offscreen sections; `auto` remembers
+     each section's real size after first render to avoid scroll jumps */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 700px;
+}
+
+.gradient-text {
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* shared two-button row (hero + contact) */
+.cta-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 540px) {
+  section { padding: 80px 0; }
+}

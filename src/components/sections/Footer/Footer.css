@@ -1,0 +1,23 @@
+.footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+}
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer p { color: var(--text-faint); font-size: 0.9rem; }
+.footer .socials { display: flex; gap: 10px; }
+.footer .socials a {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  padding: 8px 14px;
+  border-radius: var(--pill);
+  border: 1px solid var(--border);
+  background: var(--glass);
+  transition: background 0.2s, color 0.2s;
+}
+.footer .socials a:hover { background: var(--glass-strong); color: var(--text); }

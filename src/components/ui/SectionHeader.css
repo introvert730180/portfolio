@@ -1,0 +1,21 @@
+.section-head {
+  margin-bottom: 56px;
+}
+.section-head.center {
+  text-align: center;
+}
+.section-head.center .section-sub {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 22px 0 14px;
+}
+
+.section-sub {
+  color: var(--text-dim);
+  max-width: 560px;
+  font-size: 1.05rem;
+}

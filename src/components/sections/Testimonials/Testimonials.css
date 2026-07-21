@@ -1,0 +1,31 @@
+.grid-testi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.testi-card { padding: 30px 28px; }
+.testi-card .stars { color: var(--star); margin-bottom: 16px; letter-spacing: 2px; }
+.testi-card blockquote {
+  font-size: 1.02rem;
+  color: var(--text);
+  margin-bottom: 22px;
+  line-height: 1.65;
+}
+.testi-card .who { display: flex; align-items: center; gap: 12px; }
+.testi-card .avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--violet), var(--blue));
+  color: var(--on-accent);
+}
+.testi-card .who h4 { font-size: 0.98rem; }
+.testi-card .who span { font-size: 0.85rem; color: var(--text-faint); }
+
+@media (max-width: 900px) {
+  .grid-testi { grid-template-columns: 1fr; }
+}

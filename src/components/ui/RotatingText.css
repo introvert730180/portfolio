@@ -1,0 +1,22 @@
+/* Inline box that hugs the current word's width and animates between words. */
+.rotating-text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* In normal flow but invisible: sets the height and the width we measure. */
+.rotating-text-measure {
+  visibility: hidden;
+}
+
+/* The painted word, layered on top so swaps can slide in/out vertically. */
+.rotating-text-word {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  will-change: transform, opacity;
+}

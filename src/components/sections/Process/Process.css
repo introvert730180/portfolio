@@ -1,0 +1,26 @@
+.grid-process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.process-card { padding: 30px 26px; }
+.process-card .step {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--violet), var(--cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 14px;
+}
+.process-card h3 { font-size: 1.15rem; margin-bottom: 8px; }
+.process-card p { color: var(--text-dim); font-size: 0.93rem; }
+
+@media (max-width: 900px) {
+  .grid-process { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 540px) {
+  .grid-process { grid-template-columns: 1fr; }
+}
